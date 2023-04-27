@@ -14,4 +14,15 @@
 	5! = 5 × 4 × 3 × 2 × 1 = 120
 */
 
-const factorial = n => { }
+const factorial = n => {
+	// Version récursive
+	// if (n === 0) return 1;
+	// return n * factorial(n - 1);
+
+	// Version itérative
+	let result = 1;
+	for (let i = 1; i <= n; i++) {
+		result *= i;
+	}
+	return result;
+}
